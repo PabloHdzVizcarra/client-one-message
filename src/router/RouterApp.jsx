@@ -5,10 +5,7 @@ import {
   Route,
 } from "react-router-dom";
 import NavBar from "../components/navbar/NavBar";
-
-function RegisterPage () {
-  return <p>Register Page</p>;
-}
+import RegisterPage from "../page/register-page/RegisterPage";
 
 function LoginPage () {
   return <p>Login Page</p>;
