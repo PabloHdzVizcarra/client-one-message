@@ -23,6 +23,7 @@ function RouterApp () {
     <Router>
       <div>
         <NavBar title={"One Messages"}/>
+
         <div className={"container py-2"}>
           <Switch>
             <Route path={"/register"}>
@@ -36,6 +37,7 @@ function RouterApp () {
             </Route>
           </Switch>
         </div>
+
       </div>
     </Router>
   );
