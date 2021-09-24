@@ -7,15 +7,15 @@ import {
 import NavBar from "../components/navbar/NavBar";
 
 function RegisterPage () {
-  return <h1>Register Page</h1>;
+  return <p>Register Page</p>;
 }
 
 function LoginPage () {
-  return <h1>Login Page</h1>;
+  return <p>Login Page</p>;
 }
 
 function HomePage () {
-  return <h1>Home Page</h1>;
+  return <p>Home Page</p>;
 }
 
 function RouterApp () {
@@ -23,17 +23,19 @@ function RouterApp () {
     <Router>
       <div>
         <NavBar title={"One Messages"}/>
-        <Switch>
-          <Route path={"/register"}>
-            <RegisterPage/>
-          </Route>
-          <Route path={"/login"}>
-            <LoginPage/>
-          </Route>
-          <Route path={"/"}>
-            <HomePage/>
-          </Route>
-        </Switch>
+        <div className={"container py-2"}>
+          <Switch>
+            <Route path={"/register"}>
+              <RegisterPage/>
+            </Route>
+            <Route path={"/login"}>
+              <LoginPage/>
+            </Route>
+            <Route path={"/"}>
+              <HomePage/>
+            </Route>
+          </Switch>
+        </div>
       </div>
     </Router>
   );

@@ -4,7 +4,9 @@ function NavBar ({ title }) {
   return (
     <nav className="navbar navbar-light bg-light">
       <div className="container-fluid">
-        <a className="navbar-brand" href={"/"}>{title}</a>
+        <a className="navbar-brand" href={"/"}>
+          <h1>{title}</h1>
+        </a>
         <form className="d-flex">
           <button
             className="btn btn-warning mx-1"
